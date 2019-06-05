@@ -16,9 +16,9 @@
 #banner {
   position: absolute;
   width: 100%;
-  background: #ff5733;
+  background: #d60059;
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 40px;
   }
  
@@ -26,10 +26,10 @@
     position: absolute;
     top: 0; 
     left: 0;
-    height: 40px;
-    width: 40px;
-    padding-left: 15px;
-    padding-top: 15px;
+    height: 55px;
+    width: 240px;
+    
+    padding-top: 8px;
   }
 
 #notice {
@@ -39,6 +39,10 @@
   margin-bottom: 2em;
   background-color: #f0f0f0;
   font: bold smaller sans-serif;
+}
+
+.locale {
+float: right;
 }
  
 #notice:empty {
@@ -83,9 +87,14 @@ form, div {
       font-size: small;
     }
  
-    #cart {
+    #cart, #order {
       font-size: smaller;
       color:     white;
+
+      a, a:hover {
+        color: white;
+        background-color: #141;
+      }
  
       table {
         border-top:    1px dotted #595;
@@ -108,4 +117,44 @@ form, div {
   #banner .title {
     display: block;
   }
+
+  .depot_form {
+  fieldset {
+    background: #efe;
+ 
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+ 
+    div {
+      margin-bottom: 0.3em;
+    }
+  }
+ 
+  form {
+    label {
+      width: 10em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+ 
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+ 
+    .actions {
+      margin-left: 10em;
+    }
+ 
+    br {
+      display: none;
+    }
+}
+}
 }
